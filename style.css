@@ -1,0 +1,86 @@
+/** {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+*/.title {
+	width:80%;
+	height: auto;
+	margin-right: 10%;
+	margin-left: 10%;
+	background-color: #adebad;
+}
+.title p {
+	font-size: 200%;
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-weight: bold;
+}	
+
+.container {
+	width: 80%;
+	height: auto;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom: 2%;
+	margin-top: 1%;
+	background-color: black; 
+}
+
+.footer {
+	width: 80%;
+	height: auto;
+	margin-right: 10%;
+	margin-left: 10%;
+	background-color: black;
+	font: white;
+}
+
+.box {
+	width: 50%;
+	height: auto;
+	padding: 2%;
+	background-color: #adebad;
+	margin: 0 auto; 
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+
+.box p {
+	text-align: center;
+	font-size: 150%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	font-weight: bold;
+}

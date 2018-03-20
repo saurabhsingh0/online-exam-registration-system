@@ -3,6 +3,7 @@
 <head>
 	<title>Sign up</title>
 	<link rel="stylesheet" type="text/css" href="signup_style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<form action="signup.php" method="POST" style="border:1px solid #ccc">
@@ -27,10 +28,11 @@
 			<input type="text" placeholder="Enter Branch" name="branch" required>
 
 			<label for="psw"><b>Password</b></label>
-			<input type="password" placeholder="Enter Password" name="psw" required>
+			<input type="password" id="password" placeholder="Enter Password" name="password" required>
 
 			<label for="psw-repeat"><b>Repeat Password</b></label>
-			<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+			<input type="password" id="confirm_password" placeholder="Repeat Password" name="password-repeat" required>
+			<span id="message"></span>
 
 			<label>
 				<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -44,6 +46,15 @@
 			</div>
 		</div>
 	</form>
-
+	<script type="text/javascript">
+		$('#password, #confirm_password').on('keyup',function(){
+			if($('#password').val()==$('#confirm_password').val()){
+				$('#message').html('Matching').css('color','green');
+			}
+			else{
+				$('#message').html('Not Matching').css('color','red')
+			}
+		});
+	</script>
 </body>
 </html>

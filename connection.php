@@ -1,11 +1,11 @@
 <?php  
 	$servername="localhost";
-	$username="root";
-	$password="";
+	$user_name="root";
+	$pword="";
 	$db_name="online-exam-registration-system";
 
 	//create new connection
-	$conn = mysqli_connect($servername,$username,$password,$db_name);
+	$conn = mysqli_connect($servername,$user_name,$pword,$db_name);
 	if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 	}

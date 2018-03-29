@@ -4,8 +4,6 @@
 	if(isset($_SESSION['login_user'])){
 		header('location: home.php');
 	}
-
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,8 +22,8 @@
 				<label for"username"><b>UserName</b></label>
 				<input type="text" name="username" placeholder="Enter Username" required>
 				<label for"password"><b>Password</b></label>
-				<input type="text" name="password" placeholder="Enter Password" required>
-				 <button type="submit">Login</button>
+				<input type="password" name="password" placeholder="Enter Password" required>
+				 <button type="submit" name="submit">Login</button>
 				<label>
 				  <input type="checkbox" checked="checked" name="remember"> Remember me
 				</label>
